@@ -12,17 +12,38 @@ document.getElementById("reportForm").addEventListener("submit", async (e) => {
 
   const data = {
     embeds: [{
-      title: "📋 Новый рапорт на повышение",
-      color: 3447003,
+      title: "LOS SANTOS POLICE DEPARTMENT",
+      description: "**PROMOTION REPORT**\n━━━━━━━━━━━━━━━━━━━━",
+      color: 5793266,
+
       fields: [
-        { name: "👤 Ник", value: nick, inline: true },
-        { name: "🆔 Static ID", value: staticId, inline: true },
-        { name: "🏢 Подразделение", value: dept, inline: true },
-        { name: "📅 Дата", value: now },
-        { name: "🔗 Скриншоты", value: link }
+        {
+          name: "👤 ОФИЦЕР",
+          value: `\`\`\`${nick}\`\`\``,
+          inline: true
+        },
+        {
+          name: "🆔 ID",
+          value: `\`\`\`${staticId}\`\`\``,
+          inline: true
+        },
+        {
+          name: "🏢 ОТДЕЛ",
+          value: `\`\`\`${dept}\`\`\``,
+          inline: true
+        },
+        {
+          name: "📅 ДАТА",
+          value: `\`\`\`${now}\`\`\``
+        },
+        {
+          name: "📎 ДОКАЗАТЕЛЬСТВА",
+          value: link
+        }
       ],
+
       footer: {
-        text: "LSPD System"
+        text: "LSPD • Internal Affairs System"
       }
     }]
   };
