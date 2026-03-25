@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>LSPD Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="bg"></div>
+
+<div class="card">
+  <h1>LSPD | Promotion Report</h1>
+
+  <form id="reportForm">
+    <div class="inputBox">
+      <input type="text" id="nick" required>
+      <span>Ник</span>
+    </div>
+
+    <div class="inputBox">
+      <input type="text" id="staticId" required>
+      <span>Static ID</span>
+    </div>
+
+    <div class="inputBox">
+      <select id="dept" required>
+        <option value="" disabled selected></option>
+        <option value="CPD">CPD</option>
+        <option value="DB">DB</option>
+        <option value="PAI">PAI</option>
+        <option value="PA">PA</option>
+        <option value="IAD">IAD</option>
+      </select>
+      <span>Подразделение</span>
+    </div>
+
+    <div class="inputBox">
+      <input type="url" id="link" required>
+      <span>Ссылка на скрины</span>
+    </div>
+
+    <button type="submit">Отправить</button>
+  </form>
+
+  <p id="status"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
